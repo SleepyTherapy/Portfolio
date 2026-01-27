@@ -5,60 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Therapy | Artist Portfolio</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0f0f14;
+      background-color: #0f0f14;
       color: #f2f2f2;
       line-height: 1.6;
     }
     header {
       padding: 3rem 1.5rem;
       text-align: center;
-      background: linear-gradient(135deg, #6a5acd, #ff6ec7);
+      background: linear-gradient(135deg, #6a5acd, #1e1e2f);
     }
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
-      opacity: 0.95;
+      opacity: 0.9;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem;
-      background: #141420;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      color: #f2f2f2;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #ff6ec7; }
-
     section {
       padding: 3rem 1.5rem;
       max-width: 1100px;
       margin: auto;
     }
-    section h2 {
-      font-size: 2rem;
+    h2 {
+      border-left: 4px solid #6a5acd;
+      padding-left: 0.75rem;
       margin-bottom: 1.5rem;
-      color: #ffb3ec;
     }
-
-    .about p {
-      max-width: 800px;
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+      list-style: none;
+      padding: 0;
     }
-
+    .skills li {
+      background: #1e1e2f;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+    }
     .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
     }
-  </html>
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      background: #222;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1a1a25;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Therapy</h1>
+  <p>Traditional Artist • Illustrator • Designer<br>
+  Creating expressive art to spread happiness and inspiration.</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    My name is <strong>Therapy</strong> (Nevaeh in real life). I am a 16-year-old artist who primarily specializes in traditional art, with growing experience in digital illustration and design. I began drawing at a very young age—learning how to hold crayons and pencils around the age of two—and have continued developing my skills ever since.
+  </p>
+  <p>
+    Art has always been more than a hobby for me; it is a lifelong passion and career goal. My work focuses on expressive storytelling, character design, and emotional visuals meant to bring happiness and inspiration to others.
+  </p>
+  <p>
+    I officially began pursuing art professionally in <strong>January 2024</strong>, focusing on commissions, portfolio development, and sharing my work with a wider audience.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Artistic Leadership</li>
+    <li>Creative Problem Solving</li>
+    <li>Illustration & Design</li>
+    <li>Visual Branding</li>
+    <li>Business & Commission Management</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <p>
+    I have experience working at the intersection of art and business. I have previously owned two small businesses, participated in a large-scale art project, and completed multiple independent art projects. Several of my artworks have sold within minutes of being released.
+  </p>
+  <p>
+    Through my creative work, I have earned over <strong>$300 in total sales</strong>, gaining valuable experience in pricing, client communication, time management, and delivering high-quality work under deadlines.
+  </p>
+</section>
+
+<section>
+  <h2>Past Work</h2>
+  <p>
+    Below is a selection of my most recent work. The collection includes both traditional and digital pieces, showcasing character art, concept sketches, and expressive illustrations.
+  </p>
+  <div class="gallery">
+    <img src="images/art1.png" alt="Digital character with lightning effects" />
+    <img src="images/art2.jpg" alt="Traditional landscape painting" />
+    <img src="images/art3.jpg" alt="Colorful fantasy environment artwork" />
+    <img src="images/art4.jpg" alt="Traditional character illustration" />
+    <img src="images/art5.png" alt="Anatomy sketch study" />
+    <img src="images/art6.jpg" alt="Creature line art" />
+    <img src="images/art7.png" alt="Figure sketch" />
+    <img src="images/art8.jpg" alt="Demon and angel character artwork" />
+  </div>
+</section>
+
+<footer>
+  © 2026 Therapy (Nevaeh) • Artist Portfolio
+</footer>
+
+</body>
+</html>
+
