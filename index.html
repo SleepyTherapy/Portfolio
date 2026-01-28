@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nevaeh | Art Portfolio</title>
+
+<style>
+:root {
+  --bg-black: #0b0b0f;
+  --purple-main: #7b3fe4;
+  --purple-glow: #a875ff;
+  --text-light: #eae6f7;
+  --text-muted: #b9b3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #141020, var(--bg-black));
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--purple-main);
+  text-shadow: 0 0 25px var(--purple-glow);
+}
+
+header p {
+  margin-top: 1rem;
+  max-width: 650px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.scroll-indicator {
+  margin-top: 2rem;
+  animation: float 2s infinite ease-in-out;
+  color: var(--purple-main);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 5rem 8%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: var(--purple-main);
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--purple-main);
+  padding-left: 1rem;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 900px;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: rgba(123, 63, 228, 0.08);
+  border: 1px solid rgba(123, 63, 228, 0.25);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(123, 63, 228, 0.5);
+}
+
+/* ===== EXPERIENCE ===== */
+.experience p {
+  max-width: 900px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(123, 63, 228, 0.2);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(168, 117, 255, 0.6);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(123, 63, 228, 0.2);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Nevaeh</h1>
+    <p>
+      16-year-old traditional artist with expanding experience in digital illustration,
+      design, and creative business.
+    </p>
+    <div class="scroll-indicator">↓ Scroll</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    My name is Nevaeh. I am a 16-year-old artist who primarily specializes in traditional art,
+    with growing experience in digital illustration and design. I began drawing at a very young
+    age, learning how to hold crayons and pencils around the age of two, and I have continued to
+    develop my skills consistently ever since.
+    <br><br>
+    Art has always been more than a hobby for me—it is a lifelong passion and career goal. My work
+    is driven by a desire to create expressive, meaningful pieces that bring happiness and inspiration
+    to others. I officially began pursuing art professionally in January 2024, focusing on commissions,
+    portfolio development, and sharing my work with a wider audience.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Artistic Leadership</div>
+    <div class="skill-card">Creative Problem Solving</div>
+    <div class="skill-card">Illustration & Design</div>
+    <div class="skill-card">Visual Branding</div>
+    <div class="skill-card">Business & Commission Management</div>
+  </div>
+</section>
+
+<section class="experience">
+  <h2>Experience</h2>
+  <p>
+    I have experience working at the intersection of art and business. I have previously owned
+    two small businesses, participated in a large-scale art project, and completed multiple
+    independent art projects.
+    <br><br>
+    Several of my artworks have sold within minutes of being released, earning over $300 in total
+    sales. These experiences strengthened my skills in pricing, client communication, time
+    management, and delivering high-quality work under deadlines.
+  </p>
+</section>
+
+<section>
+  <h2>Past Work</h2>
+  <div class="gallery">
+    <img src="images/1000000322.png">
+    <img src="images/1000000321.png">
+    <img src="images/1000000320.png">
+    <img src="images/1000000319.png">
+    <img src="images/1000000318.png">
+    <img src="images/1000000317.png">
+    <img src="images/1000000316.png">
+    <img src="images/1000000315.png">
+    <img src="images/1000000313.jpg">
+  </div>
+</section>
+
+<footer>
+  © 2026 Nevaeh — Art Portfolio
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight * 0.85;
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect().top;
+    if (rect < trigger) {
+      section.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
